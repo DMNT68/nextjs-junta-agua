@@ -1,0 +1,140 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  width: 100%;
+  max-width: 90%;
+  padding: 10px 2px 10px 2px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navpro {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: fixed;
+  z-index: 1100;
+  top: 0px;
+  left: auto;
+  right: 0px;
+  color: rgb(255, 255, 255);
+  box-shadow: none;
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+.containerLogo {
+  width: auto;
+  margin: 2px 10px;
+  /* background-color: green; */
+}
+
+.navigator {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-image: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 100px; */
+  padding: 5px 10px;
+  border-radius: 10px;
+  /* color: rgb(255, 255, 255); */
+  box-shadow: none;
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+.route {
+  margin: 1px 5px 1px 5px;
+  padding: 5px;
+  text-decoration: none;
+  /* border: 1px solid #616160; */
+  color: #616160;
+  /* border-radius: 10px; */
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.routeActive {
+  margin: 1px 5px 1px 5px;
+  padding: 5px;
+  text-decoration: none;
+  border-bottom: 1px solid #209c91;
+  color: #209c91;
+  /* border-radius: 10px; */
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.route:hover {
+  color: #209c91;
+  border-color: #209c91;
+}
+
+@media (max-width: 812px) {
+  .containerLogo {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .navigator {
+    display: none;
+  }
+
+  .drawerButton {
+    display: flex;
+    box-shadow: none;
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.72);
+    margin-right: 20px;
+    border-radius: 100%;
+  }
+}
+
+@media (min-width: 814px) {
+  .drawerButton {
+    display: none;
+  }
+}
+
+.drawerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 10px 20px;
+  height: auto;
+}
+
+.drawerItem {
+  padding: 15px 15px;
+  text-decoration: none;
+  color: #616160;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.drawerItem:hover {
+  padding: 15px 15px;
+  background-color: #209c9207;
+  text-decoration: none;
+  color: #209c91;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.drawerItemActive {
+  padding: 15px 15px;
+  text-decoration: none;
+  background-color: #209c9211;
+  color: #209c91;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}

@@ -1,0 +1,10 @@
+.containerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 10px;
+  margin: 10px 50px;
+  max-width: 250px;
+  max-height: 350px;
+}
